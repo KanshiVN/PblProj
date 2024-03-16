@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
+    <title>Food Menu</title>
+  </head>
+  <body>
+    <div id="themain">
+      <h1 id="thetitle">Food Menu</h1>
+    </div>
+    <div class="content">
+      <div>
+        <div>
+          <label for="search">Search:</label>
+          <input type="text" id="search" placeholder="Search for food..." />
+        </div>
+
+        <div>
+          <label for="sort">Sort by:</label>
+          <select id="sort">
+            <option value="price">Price</option>
+            <option value="popularity">Popularity</option>
+          </select>
+        </div>
+
+        <div class="menu-container" id="menu-container">
+          <table id="menu_container"></table>
+        </div>
+      </div>
+
+      <div>
+        <div class="order-container" id="order_details">
+          <h2>Your Order Summary</h2>
+          <p>
+            <i
+              >Enjoy the delicious authenticate food with us. Your total bill
+              amount is</i
+            >
+          </p>
+          <table id="order-list"></table>
+          <div id="total-amount">Total Amount: Rs.0.00</div>
+          <a href="./docs/payment.html"><button onclick="placeOrder()" id="placeorder">Place Order</button></a>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer">
+      <div class="container-flex">
+        <div class="quick-links">
+          <h2>Quick Links</h2>
+          <ul>
+            <li>About Us</li>
+            <li>Contact Us</li>
+            <li>Menu</li>
+            <li>Order</li>
+            <li>Services</li>
+          </ul>
+        </div>
+        <div class="get-in-touch">
+          <h2>Get in touch</h2>
+          <ul>
+            <li>Account</li>
+            <li>Support Center</li>
+            <li>Feedback</li>
+            <li>Suggession</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="copyright">
+        <p>Copyright &copy; 2024. Restaurant.</p>
+      </div>
+    </div>
+
+    <script src="./javas.js"></script>
+  </body>
+</html>
